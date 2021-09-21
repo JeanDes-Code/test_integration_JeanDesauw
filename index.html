@@ -8,77 +8,158 @@
     <title>Test d'intégration</title>
 </head>
 <body>
-    <div class="row">
-        <div class="col">
-            <div class="row half-card">
-                <h2>Canapé convertible<span class="important">.</span></h2>
-                <img src="ressources/images/Layne_Canape_lit.png" alt="canapé convertible layne">
-            </div>
-            <div class="row half-card">
-                <h2>L'armoire lit BIMODAL<span class="important">.</span></h2>
-                <img src="ressources/images/Amoire_Lit_Bimodal.png" alt="armoire lit bimodal">
-            </div>
-        </div>
-        <div class="col card">
-            <div class="row">
-                <div class="insert important-insert">PROMOTION</div>
-                <div class="insert secondary-insert">LIVRÉ EN 48H</div>
-            </div>
-            <img src="ressources/images/finn-vert-face-deco_1.jpg" alt="canapé convertible finn">
-            <h3>CANAPÉ CONVERTIBLE FINN</h3>
-            <div class="row">
-                <div class="col left-col"> 
-                    <p class="type">Canapé convertible</p>
-                    <p class="category">BEST-SELLER</p>
+    <div id="market">
+        <div class="row row-margin">
+            <div class="col">
+                <div class="row half-card">
+                    <h2 class="half-card_title">Canapé convertible<span class="important">.</span></h2>
+                    <img class="half-card_img" src="ressources/images/Layne_Canape_lit.png" alt="canapé convertible layne">
                 </div>
-                <div class="col right-col">
-                    <p class="important">-21%</p>
-                    <p class="price"> à partir de </p>
-                    <p class="price price-number"> <span class="crossed">3 044 €</span> 2 420€ </p>
+                <div class="row half-card">
+                    <h2 class="half-card_title">L'armoire lit BIMODAL<span class="important">.</span></h2>
+                    <img class="half-card_img" src="ressources/images/Amoire_Lit_Bimodal.png" alt="armoire lit bimodal">
                 </div>
             </div>
-            <div class="row info align-row">
-                <div class="row align-row">
-                        <div class="circle"></div>
-                        <div class="circle circle-var">
-                            <div class="circle circle-mix"></div>
+            <div class="col full-card full-card__margin-left">
+                <div class="row">
+                    <div class="full-card__insert full-card__insert_important">PROMOTION</div>
+                    <div class="full-card__insert full-card__insert_secondary">LIVRÉ EN 48H</div>
+                </div>
+                <img class="full-card_img" src="ressources/images/finn-vert-face-deco_1.jpg" alt="canapé convertible finn">
+                <div class="full-card_description">
+                    <h3 class="full-card_title">CANAPÉ CONVERTIBLE FINN</h3>
+                    <div class="row full-card_row">
+                        <div class="col full-card__col-left"> 
+                            <p class="full-card_type">Canapé convertible</p>
+                            <p class="full-card_category">BEST-SELLER</p>
                         </div>
-                    <p>  +500 coloris en magasin </p>
-                </div>
-                <div><p> Dont 27€ d'éco participation </p></div>
-            </div>
-        </div>
-        <div class="col card">
-            <div class="row">
-                <div class="insert secondary-var-insert"> COLLECTION ACCESS </div>
-                <div class="insert secondary-insert">LIVRÉ EN 48H</div>
-            </div>
-            <img src="ressources/images/marlon-melva-83-face-deco_1_1.png" alt="canapé convertible marlon">
-            <h3>CANAPÉ CONVERTIBLE MARLON</h3>
-            <div class="row">
-                <div class="col left-col">
-                    <p class="type">Canapé convertible</p>
-                    <p class="category"></p>
-                </div>
-                <div class="col right-col">
-                    <p class="important"></p>
-                    <p class="price"> à partir de </p>
-                    <p class="price price-number"> <span class="crossed"></span> 890€ </p>
-                </div>
-            </div>
-            <div class="row info align-row">
-                <div class="row align-row">
-                        <div class="circle"></div>
-                        <div class="circle circle-var">
-                            <div class="circle circle-mix"></div>
+                        <div class="col full-card__col-right">
+                            <p class="important">-21%</p>
+                            <p class="full-card__price"> à partir de </p>
+                            <p class="full-card__price full-card__price-number"> <span class="crossed">3 044 €</span> 2 420 € </p>
                         </div>
-                    <p>+500 coloris en magasin </p>
+                    </div>
                 </div>
-                <div> Dont 27€ d'éco participation </p></div>
+                <div class="row full-card_info align-row">
+                    <div class="row align-row">
+                        <div class="full-card__circle"></div>
+                        <div class="full-card__circle full-card__circle-var">
+                            <div class="full-card__circle full-card__circle-mix"></div>
+                        </div>
+                        <p>  +500 coloris en magasin </p>
+                    </div>
+                    <div><p> Dont 27 € d'éco participation </p></div>
+                </div>
+                <div class="full-card_bar"></div>
+            </div>
+            <div class="col full-card full-card__margin-left">
+                <div class="row">
+                    <div class="full-card__insert full-card__insert_secondary-var"> COLLECTION ACCESS </div>
+                    <div class="full-card__insert full-card__insert_secondary">LIVRÉ EN 48H</div>
+                </div>
+                <img class="full-card_img" src="ressources/images/marlon-melva-83-face-deco_1_1.png" alt="canapé convertible marlon">
+                <div class="full-card_description">
+                    <h3 class="full-card_title" >CANAPÉ CONVERTIBLE MARLON</h3>
+                    <div class="row full-card_row">
+                        <div class="col full-card__col-left">
+                            <p class="full-card_type">Canapé convertible</p>
+                            <p class="full-card_category"></p>
+                        </div>
+                        <div class="col full-card__col-right">
+                            <p class="important"></p>
+                            <p class="full-card__price"> à partir de </p>
+                            <p class="full-card__price full-card__price-number"> <span class="crossed"></span> 890 € </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row full-card_info align-row">
+                    <div class="row align-row">
+                        <div class="full-card__circle"></div>
+                        <div class="full-card__circle full-card__circle-var">
+                            <div class="full-card__circle full-card__circle-mix"></div>
+                        </div>
+                        <p>+500 coloris en magasin </p>
+                    </div>
+                    <div><p> Dont 27 € d'éco participation </p></div>
+                </div>
+                <div class="full-card_bar"></div>
             </div>
         </div>
-    </div>
-    <div class="row">
+        <div class="row row-margin">
+            <div class="col full-card full-card__margin-right">
+                <div class="row">
+                    <div class="full-card__insert full-card__insert_secondary">LIVRÉ EN 48H</div>
+                </div>
+                <img class="full-card_img" src="ressources/images/clark-positano-48-23_ok_925x550_-_copie_1_1.png" alt="canapé convertible clark">
+                <div class="full-card_description">
+                    <h3 class="full-card_title">CANAPÉ CONVERTIBLE CLARK</h3>
+                    <div class="row full-card_row">
+                        <div class="col full-card__col-left"> 
+                            <p class="full-card_type">Canapé convertible, Livraison express</p>
+                            <p class="full-card_category">TÊTIÈRE AMOVIBLE</p>
+                        </div>
+                        <div class="col full-card__col-right">
+                            <p class="important">-26%</p>
+                            <p class="full-card__price"> à partir de </p>
+                            <p class="full-card__price full-card__price-number"> <span class="crossed">2 615 €</span> 1 950 € </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row full-card_info align-row">
+                    <div class="row align-row">
+                        <div class="full-card__circle"></div>
+                        <div class="full-card__circle full-card__circle-var">
+                            <div class="full-card__circle full-card__circle-mix"></div>
+                        </div>
+                        <p>  +500 coloris en magasin </p>
+                    </div>
+                    <div><p> Dont 27 € d'éco participation </p></div>
+                </div>
+                <div class="full-card_bar"></div>
+            </div>
+            <div class="col full-card full-card__margin-right">
+                <div class="row">
+                    <div class="full-card__insert full-card__insert_important"> PROMOTION </div>
+                    <div class="full-card__insert full-card__insert_secondary">LIVRÉ EN 48H</div>
+                </div>
+                <img class="full-card_img" src="ressources/images/lmc_lola_angle_sawana17_face_1.jpg" alt="canapé lit angle lola">
+                <div class="full-card_description">
+                    <h3 class="full-card_title" >CANAPÉ CONVERTIBLE LOLA</h3>
+                    <div class="row full-card_row">
+                        <div class="col full-card__col-left">
+                            <p class="full-card_type">Canapé convertible</p>
+                            <p class="full-card_category">MÉRIDIENNE COFFRE RÉVERSIBLE</p>
+                        </div>
+                        <div class="col full-card__col-right">
+                            <p class="important">-23%</p>
+                            <p class="full-card__price"> à partir de </p>
+                            <p class="full-card__price full-card__price-number"> <span class="crossed">2 436 €</span> 1 890 € </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row full-card_info align-row">
+                    <div class="row align-row">
+                        <div class="full-card__circle"></div>
+                        <div class="full-card__circle full-card__circle-var">
+                            <div class="full-card__circle full-card__circle-mix"></div>
+                        </div>
+                        <p>+500 coloris en magasin </p>
+                    </div>
+                    <div><p> Dont 42,50 € d'éco participation </p></div>
+                </div>
+                <div class="full-card_bar"></div>
+            </div>
+            <div class="col">
+                <div class="row half-card">
+                    <h2 class="half-card_title">BZ Clic-Clac design<span class="important">.</span></h2>
+                    <img class="half-card_img" src="ressources/images/banquette_cat.png" alt="bz clic-clac design">
+                </div>
+                <div class="row half-card">
+                    <h2 class="half-card_title">Table et console<span class="important">.</span></h2>
+                    <img class="half-card_img" src="ressources/images/table_cat.png" alt="table et console">
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
