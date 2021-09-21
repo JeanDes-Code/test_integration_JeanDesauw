@@ -1,4 +1,4 @@
-Voici le test demandé
+Voici le test demandé :
 
 J'ai pris une capture d'une maquette, l'idée est d'intégrer en HTML/CSS ce visuel
 
