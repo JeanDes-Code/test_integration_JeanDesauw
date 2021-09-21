@@ -120,6 +120,7 @@ body {
     background-color: $secondary;
     padding : 3% 0 3% 5%;
     overflow: hidden;
+    cursor: pointer;
     &_title {
         font-size: 2rem;
         font-weight: 800;
@@ -133,6 +134,7 @@ body {
 .full-card {
     max-width: 30%;
     color:$tertiary;
+    cursor: pointer;
     &__insert {
         color: $primary;
         font-weight: 600;
@@ -225,3 +227,63 @@ body {
     }
 }
 
+/* Animations */
+
+/*Keyframes */
+@keyframes fadein {
+    0%{
+        opacity:0;
+        transform: translate(0,-1.5rem);
+    }
+    100% {
+        opacity:1;
+        transform: translate(0,0);
+    }
+}
+
+@keyframes hover {
+    0%{
+        scale: 1;
+    } 
+    30%{
+        transform: scale(1.1);
+    }
+    100%{
+        scale: 1;
+    }
+}
+
+@keyframes translateImg {
+    0%{
+        position: 0;
+    }
+    10%,90%{
+        transform:translateX(-2.8rem);
+    }
+}
+
+/*Apparition progressive des éléments */
+@for $i from 1 through 6 {
+    .m-#{$i}{
+        opacity: 1;
+        animation: fadein 800ms;
+        animation-delay: 0 + ($i * 200ms);
+        animation-fill-mode: both;
+    }
+}
+
+/*Animation au survol */
+.half-card:hover .half-card_img, .half-card:hover .half-card_title, .half-card:hover{
+    animation: hover 800ms;
+    animation-fill-mode: both;
+}
+
+.half-card:hover .half-card_img{
+    animation: translateImg 800ms;
+    animation-fill-mode: both;
+}
+
+.full-card:hover .full-card_img, .full-card:hover .full-card_description, .full-card:hover .full-card__insert, .full-card:hover .full-card_info, .full-card:hover .full-card_bar {
+    animation: hover 800ms;
+    animation-fill-mode: both;
+}
