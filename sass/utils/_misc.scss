@@ -1,0 +1,14 @@
+/*Misc utilities*/
+.crossed {
+  text-decoration: line-through;
+  color: $tertiary-var;
+}
+
+.important {
+  color: $important;
+  font-weight: 600;
+}
+
+.align-row {
+  align-items: center;
+}
